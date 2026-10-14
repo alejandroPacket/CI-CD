@@ -1,0 +1,13 @@
+name: Hola Mundo Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir Hola Mundo
+        run: echo "Hola Mundo"
